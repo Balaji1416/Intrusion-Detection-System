@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Intrusion Detection</title>
+
+  <!-- slider stylesheet -->
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.css') }}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="#">
+            <span>
+              Intrusion Detection
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"> About </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/login"> Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/register"> Sign Up</a>
+                </li>
+              </ul>
+              <div class="user_option">
+                <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          About Intrusion Detection
+        </h2>
+      </div>
+      <div class="box">
+        <div class="img-box">
+           
+        </div>
+        <div class="detail-box">
+          <p>
+            Intrusion Detection Systems (IDS) are crucial cybersecurity tools designed to monitor and analyze network traffic, system activities, and application behaviors to detect unauthorized access, potential cyber threats, and policy violations. These systems play a vital role in identifying malicious activities, such as hacking attempts, malware infections, data breaches, and insider threats. IDS can be classified into two primary types: Network-based Intrusion Detection Systems (NIDS) and Host-based Intrusion Detection Systems (HIDS). 
+            NIDS operates by analyzing network traffic for suspicious patterns or anomalies, often deployed at strategic points within a network to monitor inbound and outbound traffic. On the other hand, HIDS runs on individual hosts or devices, scrutinizing system logs, file integrity, and application behavior to detect unauthorized changes or breaches. Some IDS solutions integrate both NIDS and HIDS to provide comprehensive security coverage.<br>
+            <br>
+            Traditional IDS solutions rely on signature-based detection, which compares observed activity with a database of known attack signatures. While this approach is effective against well-documented threats, it struggles against new, unknown, or zero-day attacks. To address this limitation, anomaly-based IDS leverages machine learning and artificial intelligence to detect deviations from normal behavior, identifying potential threats even if they lack known signatures. However, anomaly-based detection can sometimes generate false positives, requiring fine-tuning to improve accuracy. Modern IDS implementations often use a hybrid approach, combining signature-based and anomaly-based detection to balance precision and adaptability.<br>
+            <br>
+            The role of IDS extends beyond just threat detection; it also provides security teams with real-time alerts, detailed logs, and forensic data to investigate incidents. Many IDS solutions integrate with Security Information and Event Management (SIEM) systems to enhance visibility and automate threat response. Advanced IDS can also trigger predefined security actions, such as blocking IP addresses, terminating malicious processes, or alerting administrators for immediate intervention. Moreover, IDS can work alongside Intrusion Prevention Systems (IPS), which actively block threats rather than just detecting them.
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
+
+ 
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      &copy; 2025 All Rights Reserved By
+      <a href="https://html.design/">Intrusion Detection</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- owl carousel script 
+    -->
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      loop: true,
+      margin: 0,
+      navText: [],
+      center: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        1000: {
+          items: 3
+        }
+      }
+    });
+  </script>
+  <!-- end owl carousel script -->
+</body>
+
+</html>
